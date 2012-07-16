@@ -29,13 +29,13 @@
             // 
             this.hotKeyLeft.Key = System.Windows.Forms.Keys.None;
             this.hotKeyLeft.Modifiers = FireAnt.Windows.Forms.Util.Modifiers.None;
-            this.hotKeyLeft.HotKeyPressed += new System.EventHandler(this.hotKeyLeft_HotKeyPressed);
+            this.hotKeyLeft.HotKeyPressed += new System.EventHandler(this.HotKeyLeftHotKeyPressed);
             // 
             // hotKeyRight
             // 
             this.hotKeyRight.Key = System.Windows.Forms.Keys.None;
             this.hotKeyRight.Modifiers = FireAnt.Windows.Forms.Util.Modifiers.None;
-            this.hotKeyRight.HotKeyPressed += new System.EventHandler(this.hotKeyRight_HotKeyPressed);
+            this.hotKeyRight.HotKeyPressed += new System.EventHandler(this.HotKeyRightHotKeyPressed);
             // 
             // ratio
             // 
@@ -48,7 +48,7 @@
             0,
             0,
             0});
-            this.ratio.ValueChanged += new System.EventHandler(this.ratio_ValueChanged);
+            this.ratio.ValueChanged += new System.EventHandler(this.RatioValueChanged);
             // 
             // ratioLabel
             // 
@@ -64,13 +64,13 @@
             // 
             this.hotKeyMakeMain.Key = System.Windows.Forms.Keys.None;
             this.hotKeyMakeMain.Modifiers = FireAnt.Windows.Forms.Util.Modifiers.None;
-            this.hotKeyMakeMain.HotKeyPressed += new System.EventHandler(this.hotKeyMakeMain_HotKeyPressed);
+            this.hotKeyMakeMain.HotKeyPressed += new System.EventHandler(this.HotKeyMakeMainHotKeyPressed);
             // 
             // hotKeyGetAll
             // 
             this.hotKeyUnGet.Key = System.Windows.Forms.Keys.None;
             this.hotKeyUnGet.Modifiers = FireAnt.Windows.Forms.Util.Modifiers.None;
-            this.hotKeyUnGet.HotKeyPressed += new System.EventHandler(this.hotKeyUnGet_HotKeyPressed);
+            this.hotKeyUnGet.HotKeyPressed += new System.EventHandler(this.HotKeyUnGetHotKeyPressed);
             // 
             // MainForm
             // 
@@ -82,7 +82,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "MainForm";
             this.Text = "WindowThing";
-            this.Closing += new System.ComponentModel.CancelEventHandler(this.MainForm_Closing);
+            this.Closing += new System.ComponentModel.CancelEventHandler(this.MainFormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.ratio)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
